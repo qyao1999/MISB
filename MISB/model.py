@@ -55,7 +55,7 @@ class DiffusionBridge():
 
             if self.local_rank == 0:
                 if self.config.wandb_log:
-                    self.wandb_run = wandb.init(id=self.config.wandb_id, project="MIDSB", name=self.config.run_name, config=self.config.dict(), resume='allow')
+                    self.wandb_run = wandb.init(id=self.config.wandb_id, project="MISB", name=self.config.run_name, config=self.config.dict(), resume='allow')
                     bridge_artifact = wandb.Artifact(name='bridge', type='code')
                     bridge_artifact.add_file(os.path.join(os.path.dirname(__file__), 'model.py'))
                     wandb.log_artifact(bridge_artifact)

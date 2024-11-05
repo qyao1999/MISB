@@ -4,7 +4,7 @@ from random import random
 
 import torch
 
-from MIDSB.model import DiffusionBridge
+from MISB.model import DiffusionBridge
 from utils.config import read_config_from_yaml
 
 os.environ['OMP_NUM_THREADS'] = '4'
@@ -102,8 +102,8 @@ def main():
         'wandb_log': args.wandb_log,
         'resume': args.resume,
         'run_name': args.run_name if args.resume else (
-            f'MIDSB_{args.bridge_type}_{args.loss_weight_type}{"_condition_" + args.condition if args.condition != "none" else ""}'
-            if args.run_name == 'MIDSB' else args.run_name),
+            f'MISB_{args.bridge_type}_{args.loss_weight_type}{"_condition_" + args.condition if args.condition != "none" else ""}'
+            if args.run_name == 'MISB' else args.run_name),
         'dataset': args.dataset if not args.resume else None,
         'generator_backbone': args.generator_backbone if not args.resume else None,
         'discriminator_backbone': args.discriminator_backbone if not args.resume else None,

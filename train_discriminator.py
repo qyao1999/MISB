@@ -7,7 +7,7 @@ from torch.utils.data import DistributedSampler
 from torch_ema import ExponentialMovingAverage
 from tqdm import tqdm
 
-from MIDSB.dataset import ComplexSpec, STFTUtil
+from MISB.dataset import ComplexSpec, STFTUtil
 from backbone import BackboneRegister
 from evaluate import MetricRegister
 from utils.config import Config, read_config_from_yaml

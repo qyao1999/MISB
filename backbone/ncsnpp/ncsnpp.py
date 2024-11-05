@@ -43,7 +43,7 @@ def pad_spec(Y):
 
 @BackboneRegister.register("ncsnpp_base")
 class NCSNpp(nn.Module):
-    """NCSN++ MIDSB"""
+    """NCSN++ MISB"""
 
     def __init__(self, 
         scale_by_sigma = True,
@@ -87,7 +87,7 @@ class NCSNpp(nn.Module):
         
         self.discriminative = discriminative
         if self.discriminative:
-            # overwrite options that make no sense for a discriminative MIDSB
+            # overwrite options that make no sense for a discriminative MISB
             conditional = False
             scale_by_sigma = False
             print("Running NCSN++ as discriminative backbone")
@@ -455,7 +455,7 @@ class NCSNpp(nn.Module):
 
 @BackboneRegister.register("ncsnpp_large")
 class NCSNppLarge(NCSNpp):
-    """Real Large-scale NCSN++ MIDSB. ~60M parameters"""
+    """Real Large-scale NCSN++ MISB. ~60M parameters"""
 
     def __init__(self, **kwargs):
         super().__init__( 
@@ -473,7 +473,7 @@ class NCSNppLarge(NCSNpp):
 
 @BackboneRegister.register("ncsnpp_small")
 class NCSNpp12M(NCSNpp):
-    """Small-scale NCSN++ MIDSB. ~12M parameters"""
+    """Small-scale NCSN++ MISB. ~12M parameters"""
 
     def __init__(self, **kwargs):
         super().__init__( 
@@ -490,7 +490,7 @@ class NCSNpp12M(NCSNpp):
 
 @BackboneRegister.register("ncsnpp_tinny")
 class NCSNpp6M(NCSNpp):
-    """Tiny-scale NCSN++ MIDSB. ~6M parameters"""
+    """Tiny-scale NCSN++ MISB. ~6M parameters"""
 
     def __init__(self, **kwargs):
         super().__init__( 
@@ -507,7 +507,7 @@ class NCSNpp6M(NCSNpp):
 
 @BackboneRegister.register("ncsnpp_ae")
 class AutoEncodeNCSNpp(nn.Module):
-    #NCSN++ MIDSB with a learnt encoder.
+    #NCSN++ MISB with a learnt encoder.
     #Takes waveform inputs instead of the STFTs
 
     def __init__(self, 
@@ -550,7 +550,7 @@ class AutoEncodeNCSNpp(nn.Module):
         
         self.discriminative = discriminative
         if self.discriminative:
-            # overwrite options that make no sense for a discriminative MIDSB
+            # overwrite options that make no sense for a discriminative MISB
             conditional = False
             scale_by_sigma = False
             print("Running NCSN++ as discriminative backbone")

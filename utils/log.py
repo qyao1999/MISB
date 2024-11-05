@@ -10,9 +10,9 @@ def log(*args) -> None:
 
 class Logger:
     head_color = 94
-    info_prefix = f'\033[{head_color}m[MIDSB]\033[0m'
-    warning_prefix = "[MIDSB] Warning:"
-    error_prefix = "[MIDSB] Error:"
+    info_prefix = f'\033[{head_color}m[MISB]\033[0m'
+    warning_prefix = "[MISB] Warning:"
+    error_prefix = "[MISB] Error:"
 
     def __init__(self):
         pass

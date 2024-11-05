@@ -1,13 +1,8 @@
 # Generative Speech Enhancement using Mean-Inverting Diffusion Schrödinger Bridge 
 
-Official Pytorch Implementation of [Generative Speech Enhancement using Mean-Inverting Diffusion Schrödinger Bridge](). 
+Official Pytorch Implementation of [Generative Speech Enhancement using Mean-Inverting Schrödinger Bridge](). 
 
-Audio samples are available at [Demo Page](https://qyao1999.github.io/MIDSB/) .
-
-<p align="center">
-  <img src="https://qyao1999.github.io/assets/bridge-_Oti9JSU.png" width="100%"/>
-</p>
-
+Audio samples are available at [Demo Page](https://qyao1999.github.io/MISB/) .
 
 
 # Installation

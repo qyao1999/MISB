@@ -5,8 +5,8 @@ import torch
 import torchaudio
 from tqdm import tqdm
 
-from MIDSB.dataset import AudioFolder
-from MIDSB.model import DiffusionBridge
+from MISB.dataset import AudioFolder
+from MISB.model import DiffusionBridge
 from utils.config import read_config_from_yaml
 from utils.log import Logger
 

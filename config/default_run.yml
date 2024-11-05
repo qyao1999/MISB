@@ -1,6 +1,6 @@
 inherit: 'default_dataset.yml'
 
-run_name: 'MIDSB'
+run_name: 'MISB'
 
 dataset: 'voicebank'
 

@@ -112,15 +112,15 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('-ms', "--sig_model_path", default='sig.onnx',
-                        help='Path to ONNX or ckpt MIDSB for SIG prediction')
+                        help='Path to ONNX or ckpt MISB for SIG prediction')
     parser.add_argument('-mbo', "--bak_ovr_model_path", default='bak_ovr.onnx',
-                        help='Path to ONNX or ckpt MIDSB for BAK and OVR prediction')
+                        help='Path to ONNX or ckpt MISB for BAK and OVR prediction')
     parser.add_argument('-t', "--testset_dir", default='/home/yq/DIDM/results/didm_VP_constant_05051555/eval_step=50_method=dpm_solver_pp_2s_time_uniform/',
                         help='Path to the dir containing audio clips in .wav to be evaluated')
     parser.add_argument('-o', "--csv_path", default=None, help='Dir to the csv that saves the results')
     parser.add_argument('-l', "--input_length", type=int, default=9)
     parser.add_argument('-r', "--run_name", type=str, default="dnsmos_p835_inference_sig_bak_ovr_test",
-                        help='Change the name depending on the test set and DNS MIDSB being evaluated')
+                        help='Change the name depending on the test set and DNS MISB being evaluated')
 
     args = parser.parse_args()
 
