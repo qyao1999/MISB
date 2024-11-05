@@ -1,4 +1,4 @@
-# Generative Speech Enhancement using Mean-Inverting Diffusion Schrödinger Bridge 
+# Generative Speech Enhancement using Mean-Inverting Schrödinger Bridge 
 
 Official Pytorch Implementation of [Generative Speech Enhancement using Mean-Inverting Schrödinger Bridge](). 
 
